@@ -16,7 +16,7 @@ function productList(){
       <h2>Product List</h2>
       {products.map((product) => (
         <div key={product.id}>
-          <p>{product.name} - {product.price}</p>
+          <p>{product.name} - ₹{product.price}</p>
 
           <button onClick={() => dispatch(addToCart(product))}>Add to card</button>
         </div>
